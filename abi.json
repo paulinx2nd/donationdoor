@@ -1,0 +1,168 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "close_batch": {
+      "params": [
+        [
+          "batch_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "close_board": {
+      "params": [
+        [
+          "board_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "decide_reservation": {
+      "params": [
+        [
+          "batch_id",
+          "string"
+        ],
+        [
+          "offer_id",
+          "string"
+        ],
+        [
+          "accept",
+          "bool"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "get_batch": {
+      "params": [
+        [
+          "batch_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_batch_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "get_batch_id": {
+      "params": [
+        [
+          "index",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_board": {
+      "params": [
+        [
+          "board_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_board_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "get_board_id": {
+      "params": [
+        [
+          "index",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "open_batch": {
+      "params": [
+        [
+          "board_id",
+          "string"
+        ],
+        [
+          "batch_key",
+          "string"
+        ],
+        [
+          "offer_batch",
+          {
+            "$dict": "any"
+          }
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "publish_board": {
+      "params": [
+        [
+          "board_key",
+          "string"
+        ],
+        [
+          "title",
+          "string"
+        ],
+        [
+          "inventory",
+          {
+            "$dict": "any"
+          }
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "reserve_matches": {
+      "params": [
+        [
+          "batch_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    }
+  }
+}
